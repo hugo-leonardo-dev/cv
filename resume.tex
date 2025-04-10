@@ -1,0 +1,261 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Hugo Leonardo} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:5584996655946}{+55 84 99665-5946}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:hugoleonardopflorencio@gmail.com}{hugoleonardopflorencio@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/hugo-leonardo-dev/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/hugo-leonardo-dev}{GitHub}
+    $|$
+    \faGlobe \hspace{.5pt} \href{https://hugoleonardo-portfolio.vercel.app/}{Portfolio}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Universidade+Potiguar/@-5.8142926,-35.208523,17z/data=!3m1!4b1!4m6!3m5!1s0x7b2fff078a448af:0x2940929cd12bc0b6!8m2!3d-5.8142979!4d-35.2059481!16s%2Fg%2F1pxw2_tms?entry=ttu&g_ep=EgoyMDI1MDQwOC4wIKXMDSoASAFQAw%3D%3D}{Natal, Brasil}
+\end{center}
+
+
+
+%----------- SUMMARY -----------
+
+\section{Resume}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+          Full Stack Developer with 2 years of experience currently working at Comigo Rastreamento, responsible for improving the company's internal application and system. Experienced in backend with NodeJS, GraphQL, C\#, PHP and database management with MySQL and PostgreSQL. Skilled in frontend technologies like React.js, Tailwind CSS and Bootstrap, with focus on user experience.
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{Languages:}{ JavaScript, TypeScript, C\#, C, C++, Python, PHP, SQL} \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{ Node.js, React.js, MySQL, MongoDB, Git, Docker, AWS, PostgresQL, GraphQL, Flespi, } \\ \vspace{3pt}
+        
+        \textbf{Methodologies:}{ Agile, Scrum, OOP, DevOps} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Comigo Rastreamento}{Natal, Brazil}
+      {Fullstack TypeScript Developer}{Sep 2024 \textbf{--} Present, Full-time}
+        \resumeItemListStart
+            \resumeItem{Implemented an operational monitoring dashboard with React.js, Node.js and GraphQL integrated with the Flespi platform, consolidating financial data, support tickets and vehicle data. Developed an intelligent alert system that automatically notifies about vehicles with communication issues, low battery and even collisions, reducing failure identification time by 35\%. The solution significantly optimized customer service through unified visualization and automated reports.}
+            \resumeItem{Co-developed an intelligent chatbot using N8N, Z-Pro and internal API, allowing customers to check vehicle service order status, inquire about products and make purchases. The solution automated 80\% of basic queries, redirecting only complex cases to human attendants, which reduced the operational load of the commercial team while maintaining customer satisfaction through instant and accurate responses.}
+            \resumeItem{Created automated scripts in Node.js for data validation and synchronization between the Flespi platform and our internal database. These routines performed consistency checks on tracker information, automatically identifying and correcting discrepancies like duplicate records, incorrect IDs and wrong configurations. The implementation reduced support tickets related to app communication issues by 60\%.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {ELITE Consultores}{Natal, Brazil}
+      {.NET Backend Developer}{Jul 2022 \textbf{--} Oct 2022}
+        \resumeItemListStart
+           \resumeItem{Developed and optimized an employee management system using C\# and ASP.NET MVC with MySQL integration through optimized stored procedures and Entity Framework, resulting in 65\% faster HR routine processing and eliminating 90\% of manual errors in time tracking and benefits management.}
+            \resumeItem{Implemented an accounting automation system using ASP.NET Core with Hangfire for background processing, developing automation agents that perform bank reconciliation, payroll processing and fiscal closing with real-time validations. The solution significantly reduced manual errors, eliminated 20 monthly hours of repetitive work and decreased accounting closing time from 3 days to 4 hours, ensuring fiscal compliance through automated entry auditing.}
+            \resumeItem{Developed an internal project management system (Jira-style) using JavaScript, MySQL and ASP.NET, with complete features for sprints (including progress charts), prioritizable backlog and GitLab API integration. The platform, which used WebSocket for real-time notifications, significantly increased development team productivity and halved status meetings, while standardizing our agile processes with task tracking linked to specific commits.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Natal Municipal Health Department}{Natal, Brazil}
+      {PHP Developer Intern}{Jul 2021 \textbf{--} Feb 2022}
+        \resumeItemListStart
+            \resumeItem{Development and optimization of PHP/Laravel system with JavaScript frontend and RESTful API, reducing page load time by 40\% and improving code maintainability}
+            \resumeItem{Complete interface redesign using Tailwind with mobile-first approach, increasing user satisfaction by 65\% and reducing technical support requests by 30\%}
+            \resumeItem{Performance optimization with Redis caching, strategic MySQL indexing and lazy loading implementation, resulting in 300ms average response time and 99.8\% monthly uptime}
+        \resumeItemListEnd
+      \resumeSubHeadingListEnd
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+    \section{Awards \& Achievements}
+    \vspace{2pt}
+    \resumeSubHeadingListStart
+    \small{\item{
+    \textbf{Academic Excellence:} Top performer in Computer Science class at Universidade Potiguar (GPA 9.1/10, Dec 2022) \\ \vspace{3pt}
+        \textbf{State Robotics Champion:} 1st place in IFRN Robotics Olympiad with industrial automation project using Arduino (2016) \\ \vspace{3pt}
+        \textbf{Programming Competition Finalist:} Top 5 in IFRN Programming Marathon with optimization algorithm in C++ (2015) \\ \vspace{3pt}    
+    }}
+    \resumeSubHeadingListEnd
+    
+    
+%----------- PROJECTS -----------
+
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{PetzFinder}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a complete pet tracking system using Node.js backend and React.js frontend, featuring: animal registration with medical history, automated generation of smart collars with QRCode containing all pet information, and geolocation API integration for real-time alerts when an animal left its safe area. The solution, created as an academic project at Universidade Potiguar, helped reduce lost pet recovery time in the test area and served as basis for an extension project with the local government, using technologies like MySQL for data storage, JWT for secure authentication and AWS Lambda for notification processing.}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{AnotaAI}}{}
+          \resumeItemListStart
+            \resumeItem{Co-developed a WhatsApp chatbot using N8N and ZPRo, capable of automating orders, providing digital menus and processing PIX payments for small local businesses. The solution was implemented in 5 establishments as a pilot project, resulting in: 30\% increase in nighttime orders, 50\% reduction in order-taking errors and 3x faster service time, with 100\% approval from participating merchants in the concept test.}
+          \resumeItemListEnd
+
+      
+
+%----------- LANGUAGES -----------
+
+\section{Languages}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Portuguese: }{Native} \\ \vspace{3pt}
+        \textbf{English: }{Fluent} \\ \vspace{3pt}
+        \textbf{German: }{Beginner} \\ \vspace{3pt}
+    }}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
