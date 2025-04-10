@@ -1,0 +1,313 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Hugo Leonardo} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:5584996655946}{+55 84 99665-5946}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:hugoleonardopflorencio@gmail.com}{hugoleonardopflorencio@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/hugo-leonardo-dev/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/hugo-leonardo-dev}{GitHub}
+    $|$
+    \faGlobe \hspace{.5pt} \href{https://hugoleonardo-portfolio.vercel.app/}{Portfolio}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Universidade+Potiguar/@-5.8142926,-35.208523,17z/data=!3m1!4b1!4m6!3m5!1s0x7b2fff078a448af:0x2940929cd12bc0b6!8m2!3d-5.8142979!4d-35.2059481!16s%2Fg%2F1pxw2_tms?entry=ttu&g_ep=EgoyMDI1MDQwOC4wIKXMDSoASAFQAw%3D%3D}{Natal, Brasil}
+\end{center}
+
+
+
+%----------- SUMMARY -----------
+
+\section{Resumo}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        Desenvolvedor Full Stack com 2 anos de experiência atualmente atuando na empresa Comigo Rastreamento, responsável por aprimorar o aplicativo e sistema de uso interno. Experiência em backend com NodeJS, GraphQL,  C\#, PHP e gerenciamento de bancos de dados MySQL e PostgreSQL. Habilidades em tecnologias frontend como React.js, Tailwind CSS e Bootstrap, com foco na experiência do usuário.
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{Linguagens:}{ JavaScript, TypeScript, C\#, C, C++, Python, PHP, SQL} \\ \vspace{3pt}
+        
+        \textbf{Tecnologias:}{ Node.js, React.js, MySQL, MongoDB, Git, Docker, AWS, PostgresQL, GraphQL, Flespi, } \\ \vspace{3pt}
+        
+        \textbf{Metodologias:}{ Agile, Scrum, OOP, DevOps} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- EXPERIENCE -----------
+
+\section{Experiência}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Comigo Rastreamento}{Natal, Brasil}
+      {Desenvolvedor Fullstack TypeScript}{Set 2024 \textbf{--} Presente, Full-time}
+        \resumeItemListStart
+            \resumeItem{Implementei um dashboard de monitoramento operacional com React.js, Node.js e GraphQL juntamente com a plataforma Flespi, consolidando dados financeiros, chamados de suporte e dados veicular. Implementei um sistema de alertas inteligentes que notifica automaticamente sobre veículos com problemas de comunicação, bateria fraca e até colisões, reduzindo em 35\% o tempo de identificação de falhas. A solução permitiu otimizar notoriamente o atendimento ao cliente através de uma visualização unificada e relatórios automatizados.  }
+            \resumeItem{Desenvolvi em parceria um chatbot inteligente utilizando N8N, Z-Pro e a API interna, permitindo que clientes consultem status de veículos em ordem de serviço, tirassem dúvidas sobre produtos e também fizesse vendas dos mesmos. A solução automatizou 80\% das consultas básicas, redirecionando apenas casos complexos para atendentes humanos, o que reduziu em peso a carga operacional da equipe comercial e aumentou o tempo disponível para prospecção de vendas, enquanto mantinha a satisfação do cliente através de respostas instantâneas e precisas.}
+            \resumeItem{Criei scripts automatizados em Node.js para validação e sincronização de dados entre a plataforma Flespi e nosso banco de dados interno. Essas rotinas realizavam verificações da consistência das informações dos rastreadores, identificando e corrigindo automaticamente discrepâncias como: registros duplicados, ids incorretos e configurações erradas. A implementação reduziu em 60\% os chamados de suporte relacionados a problemas de comunicação no aplicativo.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {ELITE Consultores}{Natal, Brazil}
+      {Desenvolvedor Backend .NET}{Jul 2022 \textbf{--} Out 2022}
+        \resumeItemListStart
+           \resumeItem{Desenvolvi e otimizei o sistema de gestão de funcionários utilizando C\# e ASP.NET MVC com integração ao MySQL através de stored procedures otimizadas e Entity Framework, resultando em uma redução de 65\% no tempo de processamento das rotinas de RH e eliminando 90\% dos erros manuais de lançamento de pontos e benefícios. }
+    
+            \resumeItem{Implementei um sistema de automação contábil utilizando ASP.NET Core com Hangfire para processamento em background, desenvolvendo agentes de automação que realizam conciliação bancária automática, processamento de folha de pagamento e fechamento fiscal com validações em tempo real. A solução reduziu bastante os erros manuais, eliminou 20 horas mensais de trabalho repetitivo e diminuiu o tempo de fechamento contábil de 3 dias para 4 horas, garantindo conformidade fiscal através de auditoria automatizada de lançamentos.}
+            
+            \resumeItem{Desenvolvi um sistema interno de gestão de projetos no estilo Jira utilizando JavaScript, MySQL e ASP.NET, com funcionalidades completas para sprints (incluindo gráficos de progresso), backlog priorizável e integração com GitLab via API. A plataforma, que utilizava WebSocket para notificações em tempo real, aumentou significamente a produtividade da equipe de desenvolvimento e reduziu pela metade as reuniões de status, além de padronizar nossos processos ágeis com rastreamento de tasks associadas a commits específicos. }
+            
+            \resumeItemListEnd
+
+    \resumeSubheading
+      {Secretaria Municipal de Saúde de Natal}{Natal, Brazil}
+      {Desenvolvedor Estagiário PHP}{Jul 2021 \textbf{--} Fev 2022}
+        \resumeItemListStart
+            \resumeItem{Desenvolvimento e otimização do sistema PHP/Laravel com frontend em JavaScript e API RESTful, o que reduziu em 40\% o tempo de carregamento das páginas e melhorou a manutenibilidade do código}
+            
+            \resumeItem{Redesenho completo da interface utilizando Tailwind com abordagem mobile-first, aumentando em 65\% a satisfação dos usuários  e reduzindo em 30\% as solicitações de suporte técnico}
+            
+            \resumeItem{Otimização de performance com cache Redis, indexação estratégica no MySQL e implementação de lazy loading, resultando em 300ms de tempo médio de resposta e 99.8\% de uptime mensal}
+            
+        \resumeItemListEnd
+      \resumeSubHeadingListEnd
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Prêmios \& Condecorações}
+\vspace{2pt}
+\resumeSubHeadingListStart
+\small{\item{
+\textbf{Excelência Acadêmica:} Um dos melhores em desempenho da turma de Ciência da Computação da Universidade Potiguar (CR 9.1/10, Dez 2022) \ \vspace{3pt}
+    \textbf{Campeão Estadual de Robótica:} 1° lugar na Olimpíada de Robótica do IFRN com projeto de automação industrial usando Arduino (2016) \\ \vspace{3pt}
+    \textbf{Finalista em Competição de Programação:} Top 5 na Maratona de Programação do IFRN com algoritmo de otimização em C++ (2015) \\ \vspace{3pt}    
+}}
+\resumeSubHeadingListEnd
+
+
+%----------- PROJECTS -----------
+
+\section{Projetos}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{PetzFinder}}{}
+          \resumeItemListStart
+            \resumeItem{Desenvolvi um sistema completo de rastreamento de pets utilizando Node.js no backend e React.js no frontend, que incluía: cadastro de animais com histórico médico, geração automatizada de coleiras inteligentes com QRCode contendo todas as informações do pet, e integração com API de geolocalização para alertas em tempo real quando um animal saía de sua área segura. A solução, criada como projeto acadêmico na Universidade Potiguar, ajudou no tempo de resgate de animais perdidos na área de testes e serviu como base para um projeto de extensão com a prefeitura local, utilizando tecnologias como MySQL para armazenamento de dados, JWT para autenticação segura e AWS Lambda para processamento das notificações.}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{AnotaAI}}{}
+          \resumeItemListStart
+            \resumeItem{Desenvolvi em equipe um chatbot para WhatsApp utilizando N8N e ZPRo, capaz de automatizar pedidos, fornecer cardápio digital e processar pagamentos via PIX para pequenos negócios locais. A solução foi implementada em 5 estabelecimentos como projeto piloto, resultando em: 30\% de aumento no volume de pedidos noturnos, redução de 50\% nos erros de anotação e tempo de atendimento 3x mais rápido, com aprovação de 100\% dos comerciantes participantes no teste de conceito.}
+          \resumeItemListEnd
+      
+
+%----------- LANGUAGES -----------
+
+\section{Idiomas}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Português: }{Nativo} \\ \vspace{3pt}
+        \textbf{Inglês: }{Fluente} \\ \vspace{3pt}
+        \textbf{Alemão: }{Iniciante} \\ \vspace{3pt}
+
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- CERTIFICATES -----------
+
+% \section{Certificates}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Project Management and Personal Productivity}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- ORGANIZATIONS -----------
+
+% \section{Organizations}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+  % \resumeSubHeadingListStart
+    % \small{\item{Basketball, Swimming, Fitness, Eight-ball, Horology}}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+% \section{References}
+  % \vspace{2pt}
+  % \resumeSubHeadingListStart
+    % \item{References available upon request.}
+  % \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
